@@ -42,8 +42,7 @@ set PYTHON_VERSION=3.8
 set CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-%AIRFLOW_VERSION%/constraints-%PYTHON_VERSION%.txt"
 pip install "apache-airflow[celery,postgres]==%AIRFLOW_VERSION%" --constraint "%CONSTRAINT_URL%"
 ```
-
-Replace `3.11.9` with your Python version if it differs.
+**Note: As per current documentation, the exact version of Airflow is latest when this document got created. please refer to https://airflow.apache.org/docs/apache-airflow/2.9.2/installation/installing-from-pypi.html for updates.
 
 #### 3. Initialize the Airflow Database
 
