@@ -1,4 +1,9 @@
-Installing Apache Airflow involves several steps, including setting up a virtual environment, installing dependencies, and configuring Airflow. Here’s a step-by-step guide to help you get started.
+Installing Apache Airflow involves several steps, 
+- 1. setting up a virtual environment,
+- 2. installing dependencies
+- 3. configuring Airflow.
+  
+Here’s a step-by-step guide to help you get started.
 
 ### Prerequisites
 
