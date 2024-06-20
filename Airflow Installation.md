@@ -7,7 +7,7 @@ Here’s a step-by-step guide to help you get started.
 
 ### Prerequisites
 
-- **Python**: Ensure you have Python 3.6+ installed.
+- **Python**: Ensure you have Python 3.6+ installed (3.7, 3.8, 3.9, 3.10).
 - **pip**: Python's package installer should be installed. You can install it by running `python -m ensurepip` if it's not already available.
 
 ### Step-by-Step Installation Guide
@@ -37,8 +37,8 @@ Activate the virtual environment:
 Install Apache Airflow using pip. You need to specify the Airflow version and the extras you need. For example, to install Airflow with the `postgres` and `celery` extras:
 
 ```sh
-set AIRFLOW_VERSION=2.5.1
-set PYTHON_VERSION=3.11.9
+set AIRFLOW_VERSION=2.9.2
+set PYTHON_VERSION=3.8
 set CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-%AIRFLOW_VERSION%/constraints-%PYTHON_VERSION%.txt"
 pip install "apache-airflow[celery,postgres]==%AIRFLOW_VERSION%" --constraint "%CONSTRAINT_URL%"
 ```
