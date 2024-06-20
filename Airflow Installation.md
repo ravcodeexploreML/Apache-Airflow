@@ -37,12 +37,12 @@ Activate the virtual environment:
 Install Apache Airflow using pip. You need to specify the Airflow version and the extras you need. For example, to install Airflow with the `postgres` and `celery` extras:
 
 ```sh
-export AIRFLOW_VERSION=2.5.1
-export CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-3.8.txt"
+set AIRFLOW_VERSION=2.5.1
+set CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-3.11.9.txt"
 pip install "apache-airflow[celery,postgres]==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 ```
 
-Replace `3.8` with your Python version if it differs.
+Replace `3.11.9` with your Python version if it differs.
 
 #### 3. Initialize the Airflow Database
 
