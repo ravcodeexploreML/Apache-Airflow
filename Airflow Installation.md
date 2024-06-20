@@ -38,8 +38,9 @@ Install Apache Airflow using pip. You need to specify the Airflow version and th
 
 ```sh
 set AIRFLOW_VERSION=2.5.1
-set CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-3.11.9.txt"
-pip install "apache-airflow[celery,postgres]==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+set PYTHON_VERSION=3.11.9
+set CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-%AIRFLOW_VERSION%/constraints-%PYTHON_VERSION%.txt"
+pip install "apache-airflow[celery,postgres]==%AIRFLOW_VERSION%" --constraint "%CONSTRAINT_URL%"
 ```
 
 Replace `3.11.9` with your Python version if it differs.
